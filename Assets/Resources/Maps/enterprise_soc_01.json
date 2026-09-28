@@ -1,0 +1,91 @@
+{
+  "mapId": "enterprise_soc_01",
+  "gridSize": 1,
+  "playBounds": { "x": 0, "y": 0, "width": 120, "height": 85 },
+  "rooms": [
+    { "id": "server_room",  "displayName": "Server Room",            "bounds": { "x": 44, "y": 58, "width": 24, "height": 20 }, "label": { "x": 56, "y": 68 } },
+    { "id": "iam",          "displayName": "IAM / Identity",         "bounds": { "x": 6,  "y": 40, "width": 20, "height": 16 }, "label": { "x": 16, "y": 48 } },
+    { "id": "network_ops",  "displayName": "Network Ops",            "bounds": { "x": 74, "y": 40, "width": 20, "height": 16 }, "label": { "x": 84, "y": 48 } },
+    { "id": "firewall",     "displayName": "Firewall",               "bounds": { "x": 50, "y": 44, "width": 16, "height": 12 }, "label": { "x": 58, "y": 50 } },
+    { "id": "data_storage", "displayName": "Data Storage",           "bounds": { "x": 10, "y": 18, "width": 22, "height": 16 }, "label": { "x": 21, "y": 26 } },
+    { "id": "endpoint",     "displayName": "Endpoint / Workstations","bounds": { "x": 72, "y": 16, "width": 24, "height": 16 }, "label": { "x": 84, "y": 24 } },
+    { "id": "soc",          "displayName": "SOC — Command Centre",   "bounds": { "x": 44, "y": 4,  "width": 34, "height": 28 }, "label": { "x": 61, "y": 18 } }
+  ],
+  "corridors": [
+    { "id": "c1", "displayName": "", "bounds": { "x": 25, "y": 46, "width": 26, "height": 6 } },
+    { "id": "c2", "displayName": "", "bounds": { "x": 65, "y": 46, "width": 10, "height": 6 } },
+    { "id": "c3", "displayName": "", "bounds": { "x": 54, "y": 55, "width": 8,  "height": 5 } },
+    { "id": "c4", "displayName": "", "bounds": { "x": 14, "y": 33, "width": 6,  "height": 8 } },
+    { "id": "c5", "displayName": "", "bounds": { "x": 80, "y": 31, "width": 6,  "height": 10 } },
+    { "id": "c6", "displayName": "", "bounds": { "x": 31, "y": 19, "width": 14, "height": 7 } },
+    { "id": "c7", "displayName": "", "bounds": { "x": 71, "y": 19, "width": 8,  "height": 7 } },
+    { "id": "c8", "displayName": "", "bounds": { "x": 58, "y": 31, "width": 6,  "height": 14 } }
+  ],
+  "doorways": [
+    { "id": "d1", "displayName": "", "bounds": { "x": 24, "y": 47, "width": 4, "height": 4 } },
+    { "id": "d2", "displayName": "", "bounds": { "x": 64, "y": 47, "width": 4, "height": 4 } },
+    { "id": "d3", "displayName": "", "bounds": { "x": 55, "y": 56, "width": 4, "height": 4 } },
+    { "id": "d4", "displayName": "", "bounds": { "x": 57, "y": 40, "width": 4, "height": 4 } }
+  ],
+  "obstacles": [
+    { "id": "o1", "displayName": "SOC desks",      "bounds": { "x": 52, "y": 12, "width": 6, "height": 3 } },
+    { "id": "o2", "displayName": "Server racks",   "bounds": { "x": 48, "y": 62, "width": 4, "height": 10 } },
+    { "id": "o3", "displayName": "Storage shelf",  "bounds": { "x": 14, "y": 20, "width": 4, "height": 6 } }
+  ],
+  "navigationWaypoints": [
+    { "id": "n1",  "displayName": "", "roomId": "soc",          "position": { "x": 61, "y": 10 } },
+    { "id": "n2",  "displayName": "", "roomId": "soc",          "position": { "x": 70, "y": 24 } },
+    { "id": "n3",  "displayName": "", "roomId": "iam",          "position": { "x": 16, "y": 48 } },
+    { "id": "n4",  "displayName": "", "roomId": "network_ops",  "position": { "x": 84, "y": 48 } },
+    { "id": "n5",  "displayName": "", "roomId": "firewall",     "position": { "x": 58, "y": 50 } },
+    { "id": "n6",  "displayName": "", "roomId": "server_room",  "position": { "x": 60, "y": 68 } },
+    { "id": "n7",  "displayName": "", "roomId": "data_storage", "position": { "x": 24, "y": 26 } },
+    { "id": "n8",  "displayName": "", "roomId": "endpoint",     "position": { "x": 84, "y": 24 } },
+    { "id": "n9",  "displayName": "", "roomId": "",             "position": { "x": 38, "y": 49 } },
+    { "id": "n10", "displayName": "", "roomId": "",             "position": { "x": 70, "y": 49 } },
+    { "id": "n11", "displayName": "", "roomId": "",             "position": { "x": 38, "y": 22 } },
+    { "id": "n12", "displayName": "", "roomId": "",             "position": { "x": 75, "y": 22 } }
+  ],
+  "spawnPoints": [
+    { "id": "s1",  "displayName": "", "roomId": "soc",          "position": { "x": 50, "y": 8 } },
+    { "id": "s2",  "displayName": "", "roomId": "soc",          "position": { "x": 72, "y": 8 } },
+    { "id": "s3",  "displayName": "", "roomId": "endpoint",     "position": { "x": 76, "y": 20 } },
+    { "id": "s4",  "displayName": "", "roomId": "endpoint",     "position": { "x": 92, "y": 28 } },
+    { "id": "s5",  "displayName": "", "roomId": "iam",          "position": { "x": 10, "y": 44 } },
+    { "id": "s6",  "displayName": "", "roomId": "network_ops",  "position": { "x": 78, "y": 44 } },
+    { "id": "s7",  "displayName": "", "roomId": "data_storage", "position": { "x": 14, "y": 30 } },
+    { "id": "s8",  "displayName": "", "roomId": "data_storage", "position": { "x": 28, "y": 20 } },
+    { "id": "s9",  "displayName": "", "roomId": "server_room",  "position": { "x": 64, "y": 72 } },
+    { "id": "s10", "displayName": "", "roomId": "soc",          "position": { "x": 61, "y": 24 } }
+  ],
+  "taskPoints": [
+    { "id": "w1",  "displayName": "Analyst station A",   "roomId": "soc",          "taskKind": "DataTransfer", "position": { "x": 50, "y": 8 } },
+    { "id": "w2",  "displayName": "Analyst station B",   "roomId": "soc",          "taskKind": "DataTransfer", "position": { "x": 72, "y": 8 } },
+    { "id": "w3",  "displayName": "IAM admin desk",      "roomId": "iam",          "taskKind": "CircuitPulse", "position": { "x": 10, "y": 42 } },
+    { "id": "w4",  "displayName": "IAM review desk",     "roomId": "iam",          "taskKind": "CircuitPulse", "position": { "x": 22, "y": 52 } },
+    { "id": "w5",  "displayName": "NetOps console",      "roomId": "network_ops",  "taskKind": "Calibration",  "position": { "x": 78, "y": 42 } },
+    { "id": "w6",  "displayName": "NetOps bench",        "roomId": "network_ops",  "taskKind": "Calibration",  "position": { "x": 90, "y": 50 } },
+    { "id": "w7",  "displayName": "Firewall console",    "roomId": "firewall",     "taskKind": "DataTransfer", "position": { "x": 53, "y": 47 } },
+    { "id": "w8",  "displayName": "Rack terminal 1",     "roomId": "server_room",  "taskKind": "CircuitPulse", "position": { "x": 56, "y": 60 } },
+    { "id": "w9",  "displayName": "Rack terminal 2",     "roomId": "server_room",  "taskKind": "CircuitPulse", "position": { "x": 64, "y": 72 } },
+    { "id": "w10", "displayName": "DC jump host",        "roomId": "server_room",  "taskKind": "DataTransfer", "position": { "x": 60, "y": 66 } },
+    { "id": "w11", "displayName": "Finance share",       "roomId": "data_storage", "taskKind": "DataTransfer", "position": { "x": 20, "y": 30 } },
+    { "id": "w12", "displayName": "Payroll workstation", "roomId": "data_storage", "taskKind": "DataTransfer", "position": { "x": 28, "y": 20 } },
+    { "id": "w13", "displayName": "Archive terminal",    "roomId": "data_storage", "taskKind": "Calibration",  "position": { "x": 14, "y": 22 } },
+    { "id": "w14", "displayName": "Dev workstation 1",   "roomId": "endpoint",     "taskKind": "Calibration",  "position": { "x": 76, "y": 18 } },
+    { "id": "w15", "displayName": "Dev workstation 2",   "roomId": "endpoint",     "taskKind": "Calibration",  "position": { "x": 92, "y": 28 } },
+    { "id": "w16", "displayName": "Shared laptop bank",  "roomId": "endpoint",     "taskKind": "DataTransfer", "position": { "x": 84, "y": 20 } }
+  ],
+  "sabotagePoints": [
+    { "id": "a1", "displayName": "Core infrastructure", "roomId": "server_room",  "kind": "Reactor",       "hasCountdown": false, "position": { "x": 60, "y": 70 } },
+    { "id": "a2", "displayName": "Comms grid",          "roomId": "network_ops",  "kind": "Communications","hasCountdown": false, "position": { "x": 84, "y": 48 } },
+    { "id": "a3", "displayName": "Storage vault",       "roomId": "data_storage", "kind": "Oxygen",        "hasCountdown": false, "position": { "x": 21, "y": 28 } },
+    { "id": "a4", "displayName": "Endpoint fleet",      "roomId": "endpoint",     "kind": "Lights",        "hasCountdown": false, "position": { "x": 84, "y": 24 } }
+  ],
+  "ventNodes": [
+    { "id": "lm1", "displayName": "LM: Server", "roomId": "server_room", "groupId": "lm", "position": { "x": 46, "y": 60 } },
+    { "id": "lm2", "displayName": "LM: IAM",    "roomId": "iam",         "groupId": "lm", "position": { "x": 24, "y": 42 } },
+    { "id": "lm3", "displayName": "LM: Data",   "roomId": "data_storage","groupId": "lm", "position": { "x": 30, "y": 32 } }
+  ],
+  "meetingPoint": { "id": "m1", "displayName": "Incident board", "roomId": "soc", "position": { "x": 61, "y": 26 } }
+}
